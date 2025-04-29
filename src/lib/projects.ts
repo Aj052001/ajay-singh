@@ -56,20 +56,5 @@ export const projects: Project[] = [
     },
     color: "from-[#10B981] to-[#059669]",
     screenshot: "/portfolio/projects/globe1.png",
-  },
-  {
-    id: "Global House Activity",
-    subtitle: "A Comprehensive Overview of Global House Contributions, Grants, and Revenue Metrics",
-    title: "Global House Activity",
-    description:
-      `Global House Activity is a data-driven project that showcases detailed information about all seven houses globally. It highlights key metrics such as grants received, revenue generated, and provides brief descriptions of each house’s activities and contributions. The goal is to offer a clear snapshot of each house's impact and performance.`,
-    preview: "#",
-    tech: ["NextJs", "NodeJs", "MongoDB", "ExpressJs", "github-scraper", "google-spreadsheet"],
-    links: {
-      website: "https://globe-frontend.vercel.app/",
-      github: "https://globe-frontend.vercel.app/",
-    },
-    color: "from-[#10B981] to-[#059669]",
-    screenshot: "/portfolio/projects/globe1.png",
   }
 ];
