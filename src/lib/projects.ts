@@ -57,4 +57,20 @@ export const projects: Project[] = [
     color: "from-[#10B981] to-[#059669]",
     screenshot: "/portfolio/projects/globe1.png",
   }
+  ,
+  {
+    id: "AlumiTalk",
+    subtitle: "Connecting College Juniors with Seniors for Mentorship and Career Guidance",
+    title: "Alumi Talk",
+    description: `
+    Alumi Talk is a student-alumni connection platform designed to bridge the gap between college juniors and their seniors. It allows students to directly connect with experienced alumni based on their branch, interests, or career path. The platform enables real-time communication, mentorship, and knowledge sharing to help juniors with internships, placements, and academic decisions. Alumi Talk fosters a culture of guidance and support within the campus, empowering students to learn from real experiences and make informed choices for their future.`,    
+    preview: "#",
+    tech: ["ReactJs", "NodeJs", "MongoDB", "ExpressJs", "socket.io"],
+    links: {
+      website: "https://github.com/Aj052001/Scholar-chat",
+      github: "https://github.com/Aj052001/Scholar-chat",
+    },
+    color: "from-[#10B981] to-[#059669]",
+    screenshot: "/portfolio/projects/alumitalk.png",
+  }
 ];
