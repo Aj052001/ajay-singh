@@ -14,7 +14,7 @@ export default function Navbar() {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const [isHovered, setIsHovered] = useState(false);
-  const [letterHovered, setLetterHovered] = useState(-1);
+  // const [letterHovered, setLetterHovered] = useState(-1);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
 
   const portfolioText = "Ajay";
@@ -111,42 +111,17 @@ export default function Navbar() {
           <div className="h-16 flex items-center justify-between px-6">
             
           <Link
-  href="/portfolio"
+  href="/"
   className="text-white hover:text-white/80 transition-colors flex items-center gap-2 shrink-0 relative"
   onMouseEnter={() => setIsHovered(true)}
   onMouseLeave={() => {
     setIsHovered(false);
-    setLetterHovered(-1);
+    // setLetterHovered(-1);
   }}
 >
   <div className="relative">
     <div className="flex items-center">
-      {portfolioText.split("").map((letter, index) => (
-        <span
-          key={index}
-          className={cn(
-            "text-2xl font-semibold transition-all duration-300 hover:scale-125 cursor-default",
-            letterHovered === index
-              ? "text-primary animate-bounce"
-              : "",
-            isHovered ? "hover:text-primary" : "",
-            isHovered && letterHovered === -1 ? "animate-pulse" : ""
-          )}
-          style={{
-            textShadow:
-              letterHovered === index
-                ? "0 0 20px rgba(255, 255, 0, 0.5)"
-                : "none",
-            transform: `translateY(${
-              letterHovered === index ? "-2px" : "0"
-            })`,
-          }}
-          onMouseEnter={() => setLetterHovered(index)}
-          onMouseLeave={() => setLetterHovered(-1)}
-        >
-          {letter}
-        </span>
-      ))}
+      {portfolioText}
     </div>
     {isHovered && (
       <div
